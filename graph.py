@@ -20,7 +20,7 @@ bucket = 5
 cn = Counter([s // bucket for s in scores])
 for pts in range(max(cn), min(cn)-1, -1):
     s = "*" * cn[pts]
-    print("{:2d}-{:2d}\t{}".format(
+    print("{:2d} - {:2d}\t{}".format(
         pts * bucket,
         pts * bucket + bucket - 1,
         s)

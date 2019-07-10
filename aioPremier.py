@@ -33,7 +33,7 @@ def histogram(scores, bucket_size=5):
 
     for pts in range(max(cn), min(cn)-1, -1):
         s = "*" * cn[pts]
-        print("{:2d}-{:2d}\t{}".format(
+        print("{:2d} - {:2d}\t{}".format(
             pts * bucket_size,
             pts * bucket_size + bucket_size - 1,
             s)
