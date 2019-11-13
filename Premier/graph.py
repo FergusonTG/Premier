@@ -6,7 +6,7 @@ import urllib.request
 import json
 
 url = "https://www.footballwebpages.co.uk/league-table.json?" + \
-    "comp=1&show=pos,pts&sort=normal"
+    "comp=2&show=pos,pts&sort=normal"
 
 with urllib.request.urlopen(url) as response:
     datatext = response.read()
